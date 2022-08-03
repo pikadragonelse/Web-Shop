@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Block Element Modifier -->
+    <div class="app">
+        <header class="header">
+           
+            <div class="grid wide">
+                <nav class="header__navbar hide-on-mobile-tablet">
+                    <ul class="header__navbar-list">
+                        <!-- separate: phân cách -->
+                        <li class="header__navbar-item header__navbar-item--has-qr header__navbar-item--separate">
+                            Vào cửa hàng trên ứng dụng PI-Dra Shop
+
+                            <!-- Header QR code -->
+                            <div class="header__QR">
+                                <img src="./assets/img/QRcode.png" alt="QR code" class="header__QR-img">
+                                <div class="header__QR-apps">
+                                    <a href="" class="header__QR-link">
+                                        <img src="./assets/img/Google play.png" alt="Google Play" class="header__QR-download-img">
+                                    </a>
+                                    <a href="" class="header__QR-link">
+                                        <img src="./assets/img/App_store.png" alt="App Store" class="header__QR-download-img">
+                                    </a>
+                                    <a href="" class="header__QR-link">
+                                        <img src="./assets/img/App_Gallery.png" alt="App Gallery" class="header__QR-download-img">
+                                    </a>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-item--title-no-pointer">Kết nối</span>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fab fa-facebook"></i>
+                            </a>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--has-notify">
+                            <a href="" class="header__navbar-item-link ">
+                                <i class="header__navbar-icon far fa-bell"></i> Thông báo
+                            </a>
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>Thông báo mới nhận</h3>
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <span>
+                                                <img src="https://phongnen.com/wp-content/uploads/2021/05/O1CN01SZHinb1PwX3aSXxOj_2204182501905.jpg" alt="" class="header__notify-img">
+                                            </span>
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Mỹ phẩm chính hãng, SALE OFF không giới hạn đến 60%</span>
+                                                <span class="header__notify-dicription">Mô tả của mỹ phẩm, đáng giá khách hàng, phản hồi tích cực, chất lượng</span>
+
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <span>
+                                                <img src="https://phongnen.com/wp-content/uploads/2021/05/O1CN01SZHinb1PwX3aSXxOj_2204182501905.jpg" alt="" class="header__notify-img">
+                                            </span>
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Mỹ phẩm chính hãng</span>
+                                                <span class="header__notify-dicription">Mô tả của mỹ phẩm</span>
+
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item ">
+                                        <a href="" class="header__notify-link">
+                                            <span>
+                                                <img src="https://phongnen.com/wp-content/uploads/2021/05/O1CN01SZHinb1PwX3aSXxOj_2204182501905.jpg" alt="" class="header__notify-img">
+                                            </span>
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Mỹ phẩm chính hãng, sale off không giới hạn đến 50%</span>
+                                                <span class="header__notify-dicription">Mô tả của mỹ phẩm</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__notify-footer">
+                                    <a href="" class="header__notify-footer-btn">Xem tất cả</a>
+                                </footer>
+                            </div>
+
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon far fa-question-circle"></i> Trợ giúp
+                            </a>
+                        </li>
+                        <!-- <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng ký</li>
+                        <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li> -->
+                        <li class="header__navbar-item header__navbar-user">
+                            <img src="https://lh3.googleusercontent.com/ogw/ADea4I4MY5f7uxKoLHEyaJAypNlefl-mauJYpkKQP3ee=s83-c-mo" alt="" class="header__navbar-user-img">
+                            <span class="header__navbar-user-name">Bảo Long</span>
+                            <ul class="header__navbar-user-menu">
+                                <li class="header__navbar-user-item">
+                                    <a href="" class="">Tài khoản của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="" class="">Địa chỉ của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="" class="">Đơn mua</a>
+                                </li>
+                                <li class="header__navbar-user-item header__navbar-user-item--sparate">
+                                    <a href="" class="">Đăng xuất</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+
+                <div class="header__bar">
+                    <label for="mobile-bar-checkbox" class="header__bar-search">
+                        <i class="fas fa-bars header__bar-icon"></i>
+                    </label>
+                    
+                    <input type="checkbox" hidden id="mobile-bar-checkbox" class="header__bar-checkbox">
+                    <div class="header__bar-category">
+                        <label for="mobile-bar-checkbox" class="header__bar-search">
+                            <div class="header__bar-overlay"></div>
+                        </label>
+                        
+                        <ul class="header__bar-list">
+                            <div class="header__bar-user">
+                                <img src="https://lh3.googleusercontent.com/ogw/ADea4I4MY5f7uxKoLHEyaJAypNlefl-mauJYpkKQP3ee=s83-c-mo" alt="User avt" class="header__bar-user-img">
+                                <p class="header__bar-user-name">Nguyễn Ngọc Bảo Long</p>
+                            </div>
+                            <li class="header__bar-item">
+                                <a href="#" class="header__bar-link">Tài khoản</a>
+                            </li>
+                            <li class="header__bar-item">
+                                <a href="#" class="header__bar-link">Dragon Pay </a>
+                            </li>
+                            <li class="header__bar-item">
+                                <a href="#" class="header__bar-link">Đơn hàng</a>
+                            </li>
+                            <li class="header__bar-item">
+                                <a href="#" class="header__bar-link header__bar-link-1">Đăng xuất</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div> 
+
+
+                <div class="header-with-search">
+                    <label for="mobile-search-checkbox" class="header__mobile-search">
+                        <i class="header__mobile-search-icon fas fa-search"></i>
+                    </label>
+                    <div class="header__logo hide-on-tablet">
+                        <a href="file:///D:/Shop/index.html" class="header__logo-link">
+                            <img src="./assets/img/Pi-Dra.png" alt="Logo" class="header__logo-img ">
+                        </a>
+                    </div>
+
+                    <input type="checkbox" hidden id="mobile-search-checkbox" class="header__search-checkbox">
+
+                    <div class="header__search ">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Tìm kiếm sản phẩm">
+            
+                            <!-- Search history -->
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item">
+                                        <a href="">Nintendo Switch</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">PS5</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header__search-select">
+                            <span class="header__search-select-label">Trong Shop</span>
+            
+                            <i class="header__search-select-icon fas fa-angle-down"></i>
+            
+                            <ul class="header__search-option">
+                                <li class="header__search-option-item header__search-option-item-active ">
+                                    <span>Trong Shop</span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                                <li class="header__search-option-item">
+                                    <span>Ngoài Shop</span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon fas fa-search"></i>
+                        </button>
+            
+                    </div>
+                    
+                    <!-- Cart layout -->
+                    <div class="header__cart">
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fas fa-shopping-cart"></i>
+                            <span class="header__cart-notice">3</span>
+
+                            <!-- No card: header__cart-list--no-cart -->
+                            <ul class="header__cart-list ">
+                                <img src="./assets/img/no_cart.png" alt="" class="header__cart-no-cart-img">
+                                <span class="header__cart-list--no-cart-msg">
+                                 Chưa có sản phẩm
+                                </span>
+                                <h3 class="header__cart-heading">Sản phẩm đã thêm</h3>
+                                <ul class="header__cart-list-items">
+                                    <!-- C -->
+                                    <li class="header__cart-item">
+                                        <img src="https://s4.nhattao.com/data/attachment-files/2020/02/14625252_bundle_color_portable_1.jpg" alt="Nintendo Switch" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Máy chơi game Nintendo Switch </h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">8.490.000đ</span>
+                                                    <span class="header__cart-item-times">x</span>
+                                                    <span class="header__cart-item-qnt">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-decription">
+                                                    Màu sắc: đỏ - xanh
+                                                </span>
+                                                <span class="header__cart-item_remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="https://s4.nhattao.com/data/attachment-files/2020/02/14625252_bundle_color_portable_1.jpg" alt="Nintendo Switch" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Máy chơi game Nintendo Switch</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">8.490.000đ</span>
+                                                    <span class="header__cart-item-times">x</span>
+                                                    <span class="header__cart-item-qnt">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-decription">
+                                                    Màu sắc: đỏ - xanh
+                                                </span>
+                                                <span class="header__cart-item_remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="https://s4.nhattao.com/data/attachment-files/2020/02/14625252_bundle_color_portable_1.jpg" alt="Nintendo Switch" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Máy chơi game Nintendo Switch</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">8.490.000đ</span>
+                                                    <span class="header__cart-item-times">x</span>
+                                                    <span class="header__cart-item-qnt">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-decription">
+                                                    Màu sắc: đỏ - xanh
+                                                </span>
+                                                <span class="header__cart-item_remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="https://s4.nhattao.com/data/attachment-files/2020/02/14625252_bundle_color_portable_1.jpg" alt="Nintendo Switch" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Máy chơi game Nintendo Switch</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">8.490.000đ</span>
+                                                    <span class="header__cart-item-times">x</span>
+                                                    <span class="header__cart-item-qnt">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-decription">
+                                                    Màu sắc: đỏ - xanh
+                                                </span>
+                                                <span class="header__cart-item_remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="https://s4.nhattao.com/data/attachment-files/2020/02/14625252_bundle_color_portable_1.jpg" alt="Nintendo Switch" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Máy chơi game Nintendo Switch</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">8.490.000đ</span>
+                                                    <span class="header__cart-item-times">x</span>
+                                                    <span class="header__cart-item-qnt">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-decription">
+                                                    Màu sắc: đỏ - xanh
+                                                </span>
+                                                <span class="header__cart-item_remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="https://s4.nhattao.com/data/attachment-files/2020/02/14625252_bundle_color_portable_1.jpg" alt="Nintendo Switch" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Máy chơi game Nintendo Switch</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">8.490.000đ</span>
+                                                    <span class="header__cart-item-times">x</span>
+                                                    <span class="header__cart-item-qnt">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-decription">
+                                                    Màu sắc: đỏ - xanh
+                                                </span>
+                                                <span class="header__cart-item_remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="https://s4.nhattao.com/data/attachment-files/2020/02/14625252_bundle_color_portable_1.jpg" alt="Nintendo Switch" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Máy chơi game Nintendo Switch</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">8.490.000đ</span>
+                                                    <span class="header__cart-item-times">x</span>
+                                                    <span class="header__cart-item-qnt">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-decription">
+                                                    Màu sắc: đỏ - xanh
+                                                </span>
+                                                <span class="header__cart-item_remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="https://s4.nhattao.com/data/attachment-files/2020/02/14625252_bundle_color_portable_1.jpg" alt="Nintendo Switch" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Máy chơi game Nintendo Switch</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">8.490.000đ</span>
+                                                    <span class="header__cart-item-times">x</span>
+                                                    <span class="header__cart-item-qnt">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-decription">
+                                                    Màu sắc: đỏ - xanh
+                                                </span>
+                                                <span class="header__cart-item_remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="https://s4.nhattao.com/data/attachment-files/2020/02/14625252_bundle_color_portable_1.jpg" alt="Nintendo Switch" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Máy chơi game Nintendo Switch</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">8.490.000đ</span>
+                                                    <span class="header__cart-item-times">x</span>
+                                                    <span class="header__cart-item-qnt">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-decription">
+                                                    Màu sắc: đỏ - xanh
+                                                </span>
+                                                <span class="header__cart-item_remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <a href="#" class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</a>
+                            </ul>
+                        </div>
+                    </div>
+                </div> 
+        
+
+            </div>
+            
+            <ul class="header__sort-bar">
+                <li class="header__sort-item ">
+                    <a href="#" class="header__sort-link">Liên quan</a>
+                </li>
+                <li class="header__sort-item header__sort-item--active">
+                    <a href="#" class="header__sort-link">Mới nhất</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="#" class="header__sort-link">Bán chạy</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="#" class="header__sort-link">Giá</a>
+                </li>
+            </ul>
+        
+        </header>
+        
+        <div class="app__container">
+            <div class="grid wide">
+                <div class="row sm-gutter app__content">
+                    <div class="col l-2 m-0 c-0 ">
+                        <div class="category">
+                            <h3 class="category__heading">
+                                <i class="category__heading-icon fas fa-list-ul"></i> Danh mục
+                            </h3>
+
+                            <ul class="category-list ">
+                                <li class="category-item category-item--active">
+                                    <a href="#" class="category-item__link ">Nintendo</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Sony</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Xbox</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col l-10 m-12 c-12">
+                        <div class="home__filter hide-on-mobile-tablet">
+                            <span class="home__filter-title">Sắp xếp theo</span>
+                            <button class="home-filter__btn btn">Phổ biến</button>
+                            <button class="home-filter__btn btn btn--primary">Mới nhất</button>
+                            <button class="home-filter__btn btn">Bán chạy</button>
+
+                            <div class="select-input">
+                                <span class="select-input__lable">Giá</span>
+                                <i class="select-input__lable-icon fas fa-angle-down"></i>
+                                <ul class="select-input__list">
+                                    <li class="select-input__item">
+                                        <a href="" class="select-input__link">Giá: Thấp đến cao</a>
+                                    </li>
+                                    <li class="select-input__item">
+                                        <a href="" class="select-input__link">Giá: Cao đến thấp</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="home-filter__page">
+                                <span class="home-filter__page-num">
+                                    <span class="home-filter__page-current">1</span>/14
+                                </span>
+
+                                <div class="home-filter__page-control">
+                                    <a href="" class="home-filter__page-btn home-filter__page-btn--disable">
+                                        <i class="home-filter__page-icon fas fa-angle-left"></i>
+                                    </a>
+                                    <a href="" class="home-filter__page-btn">
+                                        <i class="home-filter__page-icon fas fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <nav class="mobile__category">
+                            <ul class="mobile__category-list">
+                                <li class="mobile__category-item">
+                                    <a href="#" class="mobile__category-link">thuiiiiiiiiiiiiiiiiiii mà đúng khum</a>
+                                </li>
+                                <li class="mobile__category-item">
+                                    <a href="#" class="mobile__category-link">thuiiiiiiiiiiiiiiiiiii mà đúng khum</a>
+                                </li>
+                                <li class="mobile__category-item">
+                                    <a href="#" class="mobile__category-link">thuiiiiiiiiiiiiiiiiiii mà đúng khum</a>
+                                </li>
+                                <li class="mobile__category-item">
+                                    <a href="#" class="mobile__category-link">thuiiiiiiiiiiiiiiiiiii mà đúng khum</a>
+                                </li>
+                                <li class="mobile__category-item">
+                                    <a href="#" class="mobile__category-link">thuiiiiiiiiiiiiiiiiiii mà đúng khum</a>
+                                </li>
+                                <li class="mobile__category-item">
+                                    <a href="#" class="mobile__category-link">thuiiiiiiiiiiiiiiiiiii mà đúng khum</a>
+                                </li>
+                                <li class="mobile__category-item">
+                                    <a href="#" class="mobile__category-link">thuiiiiiiiiiiiiiiiiiii mà đúng khum</a>
+                                </li>
+                                <li class="mobile__category-item">
+                                    <a href="#" class="mobile__category-link">thuiiiiiiiiiiiiiiiiiii mà đúng khum</a>
+                                </li>
+                                <li class="mobile__category-item">
+                                    <a href="#" class="mobile__category-link">thuiiiiiiiiiiiiiiiiiii mà đúng khum</a>
+                                </li>
+                                <li class="mobile__category-item">
+                                    <a href="#" class="mobile__category-link">thuiiiiiiiiiiiiiiiiiii mà đúng khum</a>
+                                </li>
+                                <li class="mobile__category-item">
+                                    <a href="#" class="mobile__category-link">thuiiiiiiiiiiiiiiiiiii mà đúng khum</a>
+                                </li>
+                                <li class="mobile__category-item">
+                                    <a href="#" class="mobile__category-link">thuiiiiiiiiiiiiiiiiiii mà đúng khum</a>
+                                </li>
+                                <li class="mobile__category-item">
+                                    <a href="#" class="mobile__category-link">thuiiiiiiiiiiiiiiiiiii mà đúng khum</a>
+                                </li>
+                                <li class="mobile__category-item">
+                                    <a href="#" class="mobile__category-link">thuiiiiiiiiiiiiiiiiiii mà đúng khum</a>
+                                </li>
+                                <li class="mobile__category-item">
+                                    <a href="#" class="mobile__category-link">thuiiiiiiiiiiiiiiiiiii mà đúng khum</a>
+                                </li>
+                                <li class="mobile__category-item">
+                                    <a href="#" class="mobile__category-link">thuiiiiiiiiiiiiiiiiiii mà đúng khum</a>
+                                </li>
+                                <li class="mobile__category-item">
+                                    <a href="#" class="mobile__category-link">thuiiiiiiiiiiiiiiiiiii mà đúng khum</a>
+                                </li>
+                                <li class="mobile__category-item">
+                                    <a href="#" class="mobile__category-link">thuiiiiiiiiiiiiiiiiiii mà đúng khum</a>
+                                </li>
+                                <li class="mobile__category-item">
+                                    <a href="#" class="mobile__category-link">thuiiiiiiiiiiiiiiiiiii mà đúng khum</a>
+                                </li>
+
+                            </ul>
+                        </nav>
+                        
+                        <div class="product">
+                            <div class="row sm-gutter">
+                                <div class="col l-2-4 m-4 c-6">
+                                    <!-- Product items -->
+                                    <a class="product-item" href="#">
+                                        <div class="product-item__img" style="background-image: url(https://product.hstatic.net/1000234467/product/61jnrafz7zl._ac_sl1457__272e42c39407421085450d2a0e0ad8ea.jpg);"></div>
+                                        <h4 class="product-item__name">NINTENDO SWITCH V2 likenew- Máy chơi game nintendo chính hãng</h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-old">₫8.950.000</span>
+                                            <span class="product-item__price-current">₫7.990.000</span>
+                                        </div>
+
+                                        <div class="product-item__action">
+                                            <div class="product-item__like product-item__like--liked ">
+                                                <i class="product-item__like-icon-unliked far fa-heart"></i>
+                                                <i class="product-item__like-icon-liked fas fa-heart"></i>
+                                            </div>
+                                            <div class="product-item__rating">
+                                                <i class="product-item__star-gold fas fa-star"></i>
+                                                <i class="product-item__star-gold fas fa-star"></i>
+                                                <i class="product-item__star-gold fas fa-star"></i>
+                                                <i class="product-item__star-gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="product-item__sold">100 đã bán</span>
+                                        </div>
+
+                                        <div class="product-item__origin">
+                                            <span class="product-item__origin-name">Nintendo</span>
+                                            <span class="product-item__brand">TP.Hồ Chí Mính</span>
+                                        </div>
+
+                                        <div class="product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+
+                                        <div class="product-item__sale-off">
+                                            <div class="product-item__sale-off-percent">12%</div>
+                                            <div class="product-item__sale-off-lable">GIẢM</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <!-- Product items -->
+                                    <a class="product-item" href="#">
+                                        <div class="product-item__img" style="background-image: url(https://product.hstatic.net/1000234467/product/61jnrafz7zl._ac_sl1457__272e42c39407421085450d2a0e0ad8ea.jpg);"></div>
+                                        <h4 class="product-item__name">NINTENDO SWITCH V2 likenew- Máy chơi game nintendo chính hãng</h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-old">₫8.950.000</span>
+                                            <span class="product-item__price-current">₫7.990.000</span>
+                                        </div>
+
+                                        <div class="product-item__action">
+                                            <div class="product-item__like product-item__like--liked ">
+                                                <i class="product-item__like-icon-unliked far fa-heart"></i>
+                                                <i class="product-item__like-icon-liked fas fa-heart"></i>
+                                            </div>
+                                            <div class="product-item__rating">
+                                                <i class="product-item__star-gold fas fa-star"></i>
+                                                <i class="product-item__star-gold fas fa-star"></i>
+                                                <i class="product-item__star-gold fas fa-star"></i>
+                                                <i class="product-item__star-gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="product-item__sold">100 đã bán</span>
+                                        </div>
+
+                                        <div class="product-item__origin">
+                                            <span class="product-item__origin-name">Nintendo</span>
+                                            <span class="product-item__brand">TP.Hồ Chí Mính</span>
+                                        </div>
+
+                                        <div class="product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+
+                                        <div class="product-item__sale-off">
+                                            <div class="product-item__sale-off-percent">12%</div>
+                                            <div class="product-item__sale-off-lable">GIẢM</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <!-- Product items -->
+                                    <a class="product-item" href="#">
+                                        <div class="product-item__img" style="background-image: url(https://product.hstatic.net/1000234467/product/61jnrafz7zl._ac_sl1457__272e42c39407421085450d2a0e0ad8ea.jpg);"></div>
+                                        <h4 class="product-item__name">NINTENDO SWITCH V2 likenew- Máy chơi game nintendo chính hãng</h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-old">₫8.950.000</span>
+                                            <span class="product-item__price-current">₫7.990.000</span>
+                                        </div>
+
+                                        <div class="product-item__action">
+                                            <div class="product-item__like product-item__like--liked ">
+                                                <i class="product-item__like-icon-unliked far fa-heart"></i>
+                                                <i class="product-item__like-icon-liked fas fa-heart"></i>
+                                            </div>
+                                            <div class="product-item__rating">
+                                                <i class="product-item__star-gold fas fa-star"></i>
+                                                <i class="product-item__star-gold fas fa-star"></i>
+                                                <i class="product-item__star-gold fas fa-star"></i>
+                                                <i class="product-item__star-gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="product-item__sold">100 đã bán</span>
+                                        </div>
+
+                                        <div class="product-item__origin">
+                                            <span class="product-item__origin-name">Nintendo</span>
+                                            <span class="product-item__brand">TP.Hồ Chí Mính</span>
+                                        </div>
+
+                                        <div class="product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+
+                                        <div class="product-item__sale-off">
+                                            <div class="product-item__sale-off-percent">12%</div>
+                                            <div class="product-item__sale-off-lable">GIẢM</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <!-- Product items -->
+                                    <a class="product-item" href="#">
+                                        <div class="product-item__img" style="background-image: url(https://product.hstatic.net/1000234467/product/61jnrafz7zl._ac_sl1457__272e42c39407421085450d2a0e0ad8ea.jpg);"></div>
+                                        <h4 class="product-item__name">NINTENDO SWITCH V2 likenew- Máy chơi game nintendo chính hãng</h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-old">₫8.950.000</span>
+                                            <span class="product-item__price-current">₫7.990.000</span>
+                                        </div>
+
+                                        <div class="product-item__action">
+                                            <div class="product-item__like product-item__like--liked ">
+                                                <i class="product-item__like-icon-unliked far fa-heart"></i>
+                                                <i class="product-item__like-icon-liked fas fa-heart"></i>
+                                            </div>
+                                            <div class="product-item__rating">
+                                                <i class="product-item__star-gold fas fa-star"></i>
+                                                <i class="product-item__star-gold fas fa-star"></i>
+                                                <i class="product-item__star-gold fas fa-star"></i>
+                                                <i class="product-item__star-gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="product-item__sold">100 đã bán</span>
+                                        </div>
+
+                                        <div class="product-item__origin">
+                                            <span class="product-item__origin-name">Nintendo</span>
+                                            <span class="product-item__brand">TP.Hồ Chí Mính</span>
+                                        </div>
+
+                                        <div class="product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+
+                                        <div class="product-item__sale-off">
+                                            <div class="product-item__sale-off-percent">12%</div>
+                                            <div class="product-item__sale-off-lable">GIẢM</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <!-- Product items -->
+                                    <a class="product-item" href="#">
+                                        <div class="product-item__img" style="background-image: url(https://product.hstatic.net/1000234467/product/61jnrafz7zl._ac_sl1457__272e42c39407421085450d2a0e0ad8ea.jpg);"></div>
+                                        <h4 class="product-item__name">NINTENDO SWITCH V2 likenew- Máy chơi game nintendo chính hãng</h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-old">₫8.950.000</span>
+                                            <span class="product-item__price-current">₫7.990.000</span>
+                                        </div>
+
+                                        <div class="product-item__action">
+                                            <div class="product-item__like product-item__like--liked ">
+                                                <i class="product-item__like-icon-unliked far fa-heart"></i>
+                                                <i class="product-item__like-icon-liked fas fa-heart"></i>
+                                            </div>
+                                            <div class="product-item__rating">
+                                                <i class="product-item__star-gold fas fa-star"></i>
+                                                <i class="product-item__star-gold fas fa-star"></i>
+                                                <i class="product-item__star-gold fas fa-star"></i>
+                                                <i class="product-item__star-gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="product-item__sold">100 đã bán</span>
+                                        </div>
+
+                                        <div class="product-item__origin">
+                                            <span class="product-item__origin-name">Nintendo</span>
+                                            <span class="product-item__brand">TP.Hồ Chí Mính</span>
+                                        </div>
+
+                                        <div class="product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+
+                                        <div class="product-item__sale-off">
+                                            <div class="product-item__sale-off-percent">12%</div>
+                                            <div class="product-item__sale-off-lable">GIẢM</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <!-- Product items -->
+                                    <a class="product-item" href="#">
+                                        <div class="product-item__img" style="background-image: url(https://product.hstatic.net/1000234467/product/61jnrafz7zl._ac_sl1457__272e42c39407421085450d2a0e0ad8ea.jpg);"></div>
+                                        <h4 class="product-item__name">NINTENDO SWITCH V2 likenew- Máy chơi game nintendo chính hãng</h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-old">₫8.950.000</span>
+                                            <span class="product-item__price-current">₫7.990.000</span>
+                                        </div>
+
+                                        <div class="product-item__action">
+                                            <div class="product-item__like product-item__like--liked ">
+                                                <i class="product-item__like-icon-unliked far fa-heart"></i>
+                                                <i class="product-item__like-icon-liked fas fa-heart"></i>
+                                            </div>
+                                            <div class="product-item__rating">
+                                                <i class="product-item__star-gold fas fa-star"></i>
+                                                <i class="product-item__star-gold fas fa-star"></i>
+                                                <i class="product-item__star-gold fas fa-star"></i>
+                                                <i class="product-item__star-gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="product-item__sold">100 đã bán</span>
+                                        </div>
+
+                                        <div class="product-item__origin">
+                                            <span class="product-item__origin-name">Nintendo</span>
+                                            <span class="product-item__brand">TP.Hồ Chí Mính</span>
+                                        </div>
+
+                                        <div class="product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+
+                                        <div class="product-item__sale-off">
+                                            <div class="product-item__sale-off-percent">12%</div>
+                                            <div class="product-item__sale-off-lable">GIẢM</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <!-- Product items -->
+                                    <a class="product-item" href="#">
+                                        <div class="product-item__img" style="background-image: url(https://product.hstatic.net/1000234467/product/61jnrafz7zl._ac_sl1457__272e42c39407421085450d2a0e0ad8ea.jpg);"></div>
+                                        <h4 class="product-item__name">NINTENDO SWITCH V2 likenew- Máy chơi game nintendo chính hãng</h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-old">₫8.950.000</span>
+                                            <span class="product-item__price-current">₫7.990.000</span>
+                                        </div>
+
+                                        <div class="product-item__action">
+                                            <div class="product-item__like product-item__like--liked ">
+                                                <i class="product-item__like-icon-unliked far fa-heart"></i>
+                                                <i class="product-item__like-icon-liked fas fa-heart"></i>
+                                            </div>
+                                            <div class="product-item__rating">
+                                                <i class="product-item__star-gold fas fa-star"></i>
+                                                <i class="product-item__star-gold fas fa-star"></i>
+                                                <i class="product-item__star-gold fas fa-star"></i>
+                                                <i class="product-item__star-gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="product-item__sold">100 đã bán</span>
+                                        </div>
+
+                                        <div class="product-item__origin">
+                                            <span class="product-item__origin-name">Nintendo</span>
+                                            <span class="product-item__brand">TP.Hồ Chí Mính</span>
+                                        </div>
+
+                                        <div class="product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+
+                                        <div class="product-item__sale-off">
+                                            <div class="product-item__sale-off-percent">12%</div>
+                                            <div class="product-item__sale-off-lable">GIẢM</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <!-- Product items -->
+                                    <a class="product-item" href="#">
+                                        <div class="product-item__img" style="background-image: url(https://product.hstatic.net/1000234467/product/61jnrafz7zl._ac_sl1457__272e42c39407421085450d2a0e0ad8ea.jpg);"></div>
+                                        <h4 class="product-item__name">NINTENDO SWITCH V2 likenew- Máy chơi game nintendo chính hãng</h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-old">₫8.950.000</span>
+                                            <span class="product-item__price-current">₫7.990.000</span>
+                                        </div>
+
+                                        <div class="product-item__action">
+                                            <div class="product-item__like product-item__like--liked ">
+                                                <i class="product-item__like-icon-unliked far fa-heart"></i>
+                                                <i class="product-item__like-icon-liked fas fa-heart"></i>
+                                            </div>
+                                            <div class="product-item__rating">
+                                                <i class="product-item__star-gold fas fa-star"></i>
+                                                <i class="product-item__star-gold fas fa-star"></i>
+                                                <i class="product-item__star-gold fas fa-star"></i>
+                                                <i class="product-item__star-gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="product-item__sold">100 đã bán</span>
+                                        </div>
+
+                                        <div class="product-item__origin">
+                                            <span class="product-item__origin-name">Nintendo</span>
+                                            <span class="product-item__brand">TP.Hồ Chí Mính</span>
+                                        </div>
+
+                                        <div class="product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+
+                                        <div class="product-item__sale-off">
+                                            <div class="product-item__sale-off-percent">12%</div>
+                                            <div class="product-item__sale-off-lable">GIẢM</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <!-- Product items -->
+                                    <a class="product-item" href="#">
+                                        <div class="product-item__img" style="background-image: url(https://product.hstatic.net/1000234467/product/61jnrafz7zl._ac_sl1457__272e42c39407421085450d2a0e0ad8ea.jpg);"></div>
+                                        <h4 class="product-item__name">NINTENDO SWITCH V2 likenew- Máy chơi game nintendo chính hãng</h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-old">₫8.950.000</span>
+                                            <span class="product-item__price-current">₫7.990.000</span>
+                                        </div>
+
+                                        <div class="product-item__action">
+                                            <div class="product-item__like product-item__like--liked ">
+                                                <i class="product-item__like-icon-unliked far fa-heart"></i>
+                                                <i class="product-item__like-icon-liked fas fa-heart"></i>
+                                            </div>
+                                            <div class="product-item__rating">
+                                                <i class="product-item__star-gold fas fa-star"></i>
+                                                <i class="product-item__star-gold fas fa-star"></i>
+                                                <i class="product-item__star-gold fas fa-star"></i>
+                                                <i class="product-item__star-gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="product-item__sold">100 đã bán</span>
+                                        </div>
+
+                                        <div class="product-item__origin">
+                                            <span class="product-item__origin-name">Nintendo</span>
+                                            <span class="product-item__brand">TP.Hồ Chí Mính</span>
+                                        </div>
+
+                                        <div class="product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+
+                                        <div class="product-item__sale-off">
+                                            <div class="product-item__sale-off-percent">12%</div>
+                                            <div class="product-item__sale-off-lable">GIẢM</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <!-- Product items -->
+                                    <a class="product-item" href="#">
+                                        <div class="product-item__img" style="background-image: url(https://product.hstatic.net/1000234467/product/61jnrafz7zl._ac_sl1457__272e42c39407421085450d2a0e0ad8ea.jpg);"></div>
+                                        <h4 class="product-item__name">NINTENDO SWITCH V2 likenew- Máy chơi game nintendo chính hãng</h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-old">₫8.950.000</span>
+                                            <span class="product-item__price-current">₫7.990.000</span>
+                                        </div>
+
+                                        <div class="product-item__action">
+                                            <div class="product-item__like product-item__like--liked ">
+                                                <i class="product-item__like-icon-unliked far fa-heart"></i>
+                                                <i class="product-item__like-icon-liked fas fa-heart"></i>
+                                            </div>
+                                            <div class="product-item__rating">
+                                                <i class="product-item__star-gold fas fa-star"></i>
+                                                <i class="product-item__star-gold fas fa-star"></i>
+                                                <i class="product-item__star-gold fas fa-star"></i>
+                                                <i class="product-item__star-gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="product-item__sold">100 đã bán</span>
+                                        </div>
+
+                                        <div class="product-item__origin">
+                                            <span class="product-item__origin-name">Nintendo</span>
+                                            <span class="product-item__brand">TP.Hồ Chí Mính</span>
+                                        </div>
+
+                                        <div class="product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+
+                                        <div class="product-item__sale-off">
+                                            <div class="product-item__sale-off-percent">12%</div>
+                                            <div class="product-item__sale-off-lable">GIẢM</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Pagination -->
+                        <ul class="pagination product__pagiantion">
+                            <li class="pagination-item ">
+                                <a href="" class="pagination-item__link">
+                                    <i class="pagination-item__icon fas fa-angle-left"></i>
+                                </a>
+                            </li>
+                            <li class="pagination-item pagination-item--active">
+                                <a href="" class="pagination-item__link ">1</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">2</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">3</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">4</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">5</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">...</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">14</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">
+                                    <i class="pagination-item__icon fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="grid wide footer__content">
+                <div class="footer__first">
+                    <div class="row">
+                        <div class="col l-2-4 m-4 c-6">
+                            <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                            <ul class="footer-list">
+                                <li class="footer-item">
+                                    <a href="#" class="footer-item__link">Trung tâm trợ giúp</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="#" class="footer-item__link">Pi-dra Shop Mall</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="#" class="footer-item__link">Hướng dẫn mua hàng</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col l-2-4 m-4 c-6">
+                            <h3 class="footer__heading">Giới thiệu</h3>
+                            <ul class="footer-list">
+                                <li class="footer-item">
+                                    <a href="#" class="footer-item__link">Giới thiệu</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="#" class="footer-item__link">Tuyển dụng</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="#" class="footer-item__link">Điều khoản</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col l-2-4 m-4 c-6">
+                            <h3 class="footer__heading">Danh mục</h3>
+                            <ul class="footer-list">
+                                <li class="footer-item">
+                                    <a href="#" class="footer-item__link">Nintendo</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="#" class="footer-item__link">Sony</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="#" class="footer-item__link">Xbox</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col l-2-4 m-4 c-6">
+                            <h3 class="footer__heading">Theo dõi</h3>
+                            <ul class="footer-list">
+                                <li class="footer-item">
+                                    <a href="#" class="footer-item__link">
+                                        <i class="footer-item__icon fab fa-facebook"></i>
+                                        <span></span> Facebook
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="#" class="footer-item__link">
+                                        <i class="footer-item__icon fab fa-instagram"></i>
+                                        <span> 
+                                            Instagram
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="#" class="footer-item__link">
+                                        <i class="footer-item__icon fab fa-linkedin"></i>
+                                        <span> 
+                                            Linkedin
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col l-2-4 m-4 c-12">
+                            <h3 class="footer__heading">Vào cửa hàng trên ứng dụng</h3>
+                            <div class="footer__dowload">
+                                <img src="./assets/img/QRcode.png" alt="QR code" class="footer__dowload-qr">
+                                <div class="footer__dowload-apps">
+                                    <a href="" class="footer__dowload-app-link">
+                                        <img src="./assets/img/Google play.png" alt="Google Play" class="footer__dowload-app-img">
+                                    </a>
+                                    <a href="" class="footer__dowload-app-link">
+                                        <img src="./assets/img/App_store.png" alt="App Store" class="footer__dowload-app-img">
+                                    </a>
+                                    <a href="" class="footer__dowload-app-link">
+                                        <img src="./assets/img/App_Gallery.png" alt="App Gallery" class="footer__dowload-app-img">
+                                    </a>
+                                </div>
+                            </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__coverage">
+                    <div class="row">
+                        <p class="footer__coverage-text">© 2021 Pi-Dra. Tất cả các quyền được bảo lưu.</p>
+                        <p class="footer__nation">Quốc gia & Khu vực:</p>
+                        <div class="footer__nation-link">
+                            <a href="#">Singapore</a>
+                        </div>
+                        <div class="footer__nation-link">
+                            <a href="#">Indonesia</a>
+                        </div>
+                        <div class="footer__nation-link">
+                            <a href="#">Đài Loan</a>
+                        </div>
+                        <div class="footer__nation-link">
+                            <a href="#">Thái Lan</a>
+                        </div>
+                        <div class="footer__nation-link">
+                            <a href="#">Malaysia</a>
+                        </div>
+                        <div class="footer__nation-link">
+                            <a href="#">Việt Nam</a>
+                        </div>
+                        <div class="footer__nation-link">
+                            <a href="#">Philippines</a>
+                        </div>
+                        <div class="footer__nation-link">
+                            <a href="#">Brazil</a>
+                        </div>
+                        <div class="footer__nation-link">
+                            <a href="#">México</a>
+                        </div>
+                        <div class="footer__nation-link">
+                            <a href="#">Colombia</a>
+                        </div>
+                        <div class="footer__nation-link">
+                            <a href="#">Chile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__last">
+                <div class="grid wide">
+                    <div class="footer-policy">
+                        <div class="footer-policy__link">
+                            <a href="#">Chính sách bảo mật</a>
+                        </div>
+                        <div class="footer-policy__link">
+                            <a href="#">Quy chế hoạt động</a>
+                        </div>
+                        <div class="footer-policy__link">
+                            <a href="#">Chính sách vận chuyển</a>
+                        </div>
+                        <div class="footer-policy__link">
+                            <a href="#">Chính sách trả hàng và hoàn tiền</a>
+                        </div>
+                    </div>
+                    <div class="footer-license">
+                        <a href="#" class="footer-license__link">
+                            <img src="./assets/img/Bo_cong_thuong.png" alt="Giấy phép đăng ký kinh doanh" class="footer-license__img">
+                        </a>
+                        <a href="#" class="footer-license__link">
+                            <img src="./assets/img/Bo_cong_thuong.png" alt="Giấy phép đăng ký kinh doanh" class="footer-license__img">
+                        </a>
+                    </div>
+                    <div class="footer-describe">
+                        <p class="footer-describe__company">Công ty TNHH Pi-dragon</p>
+                        <p>Địa chỉ: Tầng 4-5-6, Tòa nhà Capital Place, số 29 đường Liễu Giai, Phường Ngọc Khánh, Quận Ba Đình, Thành phố Hà Nội, Việt Nam. Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.shopee.vn</p>
+                        <p>Chịu Trách Nhiệm Quản Lý Nội Dung: Nguyễn Đức Trí - Điện thoại liên hệ: 024 73081221 (ext 4678)</p>
+                        <p>Mã số doanh nghiệp: 0106773786 do Sở Kế hoạch & Đầu tư TP Hà Nội cấp lần đầu ngày 10/02/2015</p>
+                        <p>© 2021 - Bản quyền thuộc về Công ty TNHH Pi-dra</p>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+        </div>
+        <!-- Modal  -->
+        <!-- <div class="modal">
+        <div class="modal__overLay">
+
+        </div>
+        <div class="modal__body"> -->
+
+        <!-- Sign form -->
+        <!--        <div class="au-form">
+                <div class="au-form__container">
+                    <div class="au-form__header">
+                        <h3 class="au-form__heading">Đăng ký</h3>
+                        <span class="au-form__switch-btn">Đăng nhập</span>
+                    </div>
+                    <div class="au-form__form"> 
+                        <div class="au-form__group">
+                            <input type="text" class="au_form__input" placeholder="Email đăng ký">
+                        </div>
+                        <div class="au-form__group">
+                            <input type="password" class="au_form__input" placeholder="Mật khẩu">
+                        </div>
+                        <div class="au-form__group">
+                            <input type="password" class="au_form__input" placeholder="Xác nhận mật khẩu">
+                        </div>
+                    </div>
+
+                    <div class="au-form__aside">
+                        <p class="au-form__policy-text">
+                            Bằng việc đăng ký, bạn đã đồng ý với PI-Dra Shop về
+                            <a href="" class="au-form__text-link">Điều khoản dịch vụ</a> &
+                            <a href="" class="au-form__text-link">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+
+                    <div class="au-form__controls">
+                        <button class="btn btn-normal au-form__controls-back">TRỞ LẠI</button>
+                        <button class="btn btn--primary ">ĐĂNG KÝ</button>
+                    </div>
+
+                </div>
+                <div class="au-form__socials">
+                    <a href="" class="btn au-form__socials--facebook btn--size-s btn--with-icon">
+                        <i class="au-form__socials-icon fab fa-facebook-square"></i>
+                        <span class="au-form__socials-title">
+                            Kết nối với Facebook
+                        </span>
+                    </a>
+                    <a href="" class="btn au-form__socials--google btn--size-s btn--with-icon">
+                        <img src="./assets/img/logo-google.jpg" alt="Google" class="au-form__socials-icon">
+                        <span class="au-form__socials-title">
+                            Kết nối với Google
+                        </span>
+                    </a>
+                </div>
+            </div> -->
+
+        <!-- Login Form -->
+        <!-- <div class="au-form">
+                <div class="au-form__container">
+                    <div class="au-form__header">
+                        <h3 class="au-form__heading">Đăng nhập</h3>
+                        <span class="au-form__switch-btn">Đăng ký</span>
+                    </div>
+                    <div class="au-form__form"> 
+                        <div class="au-form__group">
+                            <input type="text" class="au_form__input" placeholder="Email đăng ký">
+                        </div>
+                        <div class="au-form__group">
+                            <input type="password" class="au_form__input" placeholder="Mật khẩu">
+                        </div>
+                    </div>
+
+                    <div class="au-form__aside">
+                        <div class="au-form__help">
+                            <a href="" class="au-form__help-link au-form__help-link-fogot">Quên mật khẩu</a>
+                            <span class="au-form__help-separate"></span>
+                            <a href="" class="au-form__help-link">Cần trợ giúp?</a>
+                        </div>
+                    </div>
+
+                    <div class="au-form__controls">
+                        <button class="btn btn-normal au-form__controls-back">TRỞ LẠI</button>
+                        <button class="btn btn--primary ">ĐĂNG NHẬP</button>
+                    </div>
+
+                </div>
+                <div class="au-form__socials">
+                    <a href="" class="btn au-form__socials--facebook btn--size-s btn--with-icon">
+                        <i class="au-form__socials-icon fab fa-facebook-square"></i>
+                        <span class="au-form__socials-title">
+                            Login by Facebook
+                        </span>
+                    </a>
+                    <a href="" class="btn au-form__socials--google btn--size-s btn--with-icon">
+                        <img src="./assets/img/logo-google.jpg" alt="Google" class="au-form__socials-icon">
+                        <span class="au-form__socials-title">
+                            Login by Google
+                        </span>
+                    </a>
+                </div>
+            </div> -->
+        <!--     </div>
+    </div> -->
+
+</body>
+
+</html>
